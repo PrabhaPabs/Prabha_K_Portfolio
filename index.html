@@ -7,18 +7,57 @@
     <meta name="description" content="Prabha K - Digital Marketer & Frontend Developer Portfolio">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Prabha K</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#education" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#experience" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Experience</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-folder"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section id="home" class="hero-section">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
-        
-        <div class="hero-content">
+        <div class="hero-content animate-fade-in">
             <div class="hero-avatar">
                   <img src="prabha-avatar.jpg" alt="Prabha Avatar" class="avatar-img" />
             </div>
-
             <h1 class="hero-title">Hey, I'm Prabha 👋</h1>
             <p class="hero-subtitle">Entry-Level Digital Marketer & Aspiring Frontend Developer</p>
             <p class="hero-description">
@@ -34,10 +73,13 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">
+                    <i class="fas fa-user section-icon"></i>
+                    About Me
+                </h2>
                 <p class="section-description">
                     I'm a detail-oriented Computer Science Engineering student with hands-on experience in digital marketing, 
                     frontend development, and creative content design. I'm passionate about leveraging technology and creativity 
@@ -50,7 +92,7 @@
                     <div class="skill-items">
                         <span class="skill-item">SEO</span>
                         <span class="skill-item">Google & Meta Ads</span>
-                        <span class="skill-item">Content Creation</span>
+                        <span class="skill-item">Content Marketing</span>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -65,15 +107,15 @@
                     <h3 class="skill-title">Design</h3>
                     <div class="skill-items">
                         <span class="skill-item">Canva</span>
-                        <span class="skill-item">Figma</span>
+                        <span class="skill-item">Photoshop</span>
                         <span class="skill-item">UI/UX</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <h3 class="skill-title">Tools</h3>
                     <div class="skill-items">
-                        <span class="skill-item">MS Office</span>
                         <span class="skill-item">GitHub</span>
+                        <span class="skill-item">MS Office</span>
                         <span class="skill-item">Analytics</span>
                     </div>
                 </div>
@@ -97,9 +139,12 @@
     </section>
 
     <!-- Education Section -->
-    <section class="education-section">
+    <section id="education" class="education-section">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title animate-on-scroll">
+                <i class="fas fa-graduation-cap section-icon"></i>
+                Education
+            </h2>
             <div class="education-list">
                 <div class="education-card">
                     <div class="education-content">
@@ -136,9 +181,12 @@
     </section>
 
     <!-- Experience Section -->
-    <section class="experience-section">
+    <section id="experience" class="experience-section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title animate-on-scroll">
+                <i class="fas fa-briefcase section-icon"></i>
+                Experience
+            </h2>
             <div class="experience-grid">
                 <div class="experience-card">
                     <h3 class="experience-title">Digital Marketing Intern</h3>
@@ -159,19 +207,22 @@
                     <p class="experience-description">Website promotion for FoundersClick</p>
                 </div>
                 <div class="experience-card">
-                    <h3 class="experience-title">Event Designer & Content Creator</h3>
+                    <h3 class="experience-title">Designing Posters & Content Creator <a href="https://drive.google.com/drive/folders/1ktRSNc7Ia0NG2kMbu3klbPu9Rltjbx8q?usp=sharing" target="_blank" class="link">(Designed Posters)</a></h3>
                     <p class="experience-company">JKKNCET</p>
                     <p class="experience-period">2021 - 2023</p>
-                    <p class="experience-description">Posters, logos, pre/post event content using Canva</p>
+                    <p class="experience-description">Posters, logos using Canva, Creating pre/post event content</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title animate-on-scroll">
+                <i class="fas fa-folder section-icon"></i>
+                Projects
+            </h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
@@ -180,7 +231,7 @@
                         </svg>
                         <span class="project-status completed">Completed</span>
                     </div>
-                    <h3 class="project-title"><a href="https://midhilesh2003.github.io/Corizo_Major" target="_blank" class="link">E-Commerce Website</a></h3>
+                    <h3 class="project-title"><a href="https://midhilesh2003.github.io/Corizo_Major" target="_blank" class="link" style="color:#2463ea;">E-Commerce Website</a></h3>
                     <p class="project-description">This project is collaborated with Students from Various Colleges - Particularly I designed the Contact Page</p>
                     <div class="project-tech">
                         <span class="tech-tag">HTML</span>
@@ -195,7 +246,7 @@
                         </svg>
                         <span class="project-status completed">Completed</span>
                     </div>
-                    <h3 class="project-title"><a href="https://prabhapabs.github.io/Corizo_Minor_Project" target="_blank" class="link">CRUD Application</a></h3>
+                    <h3 class="project-title"><a href="https://prabhapabs.github.io/Corizo_Minor_Project" target="_blank" style="color: #2463ea;">CRUD Application</a></h3>
                     <p class="project-description">Basic frontend data management - Create, Read, Update & Delete Functions </p>
                     <div class="project-tech">
                         <span class="tech-tag">JavaScript</span>
@@ -210,22 +261,7 @@
                         </svg>
                         <span class="project-status completed">Completed</span>
                     </div>
-                    <h3 class="project-title"><a href="https://drive.google.com/drive/folders/1ktRSNc7Ia0NG2kMbu3klbPu9Rltjbx8q?usp=sharing" target="_blank" class="link">Content & Poster Designing</a></h3>
-                    <p class="project-description">Designed event posters and created engaging content to promote participation and visibility.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Content</span>
-                        <span class="tech-tag">Posters</span>
-                        <span class="tech-tag">Canva</span>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <svg class="project-icon" width="32" height="32" fill="#3b82f6" viewBox="0 0 24 24">
-                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-                        </svg>
-                        <span class="project-status completed">Completed</span>
-                    </div>
-                    <h3 class="project-title"><a href="https://www.foundersclick.com/Prabha_k" target="_blank" class="link">Website Promotion</a></h3>
+                    <h3 class="project-title"><a href="https://www.foundersclick.com/Prabha_k" target="_blank" style="color: #2463ea;">Website Promotion</a></h3>
                     <p class="project-description">Boosted user engagement on FoundersClick through blogs, posters, and awareness efforts.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Social Media</span>
@@ -240,7 +276,7 @@
                         </svg>
                         <span class="project-status completed">Completed</span>
                     </div>
-                    <h3 class="project-title"><a href="https://drive.google.com/drive/folders/11xyd5qxvNsFQCipS-54jWpePeC0s43RF?usp=sharing" target="_blank" class="link">Centralized Dashboard for District Administration</a></h3>
+                    <h3 class="project-title"><a href="https://drive.google.com/drive/folders/11xyd5qxvNsFQCipS-54jWpePeC0s43RF?usp=sharing" target="_blank" style="color: #2463ea;">Centralized Dashboard for District Administration</a></h3>
                     <p class="project-description">Tracks departmental tasks in real time, predicts delays, and automates reports for better governance.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -248,15 +284,33 @@
                         <span class="tech-tag">AI</span>
                     </div>
                 </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <svg class="project-icon" width="32" height="32" fill="#3b82f6" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                        <span class="project-status update">Updated</span>
+                    </div>
+                    <h3 class="project-title"><a href="" target="_blank" style="color: #2463ea;">Personal Portfolio</a></h3>
+                    <p class="project-description">A self-designed portfolio to professionally present my skills, projects, and career journey online.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="contact-header">
-                <h2 class="section-title white">Let's Connect</h2>
+            <div class="contact-header animate-on-scroll">
+                <h2 class="section-title white">
+                    <i class="fas fa-phone section-icon"></i>
+                    Let's Connect
+                </h2>
                 <p class="contact-description">
                     Ready to collaborate? Let's create something amazing together!
                 </p>
@@ -274,7 +328,7 @@
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                     </svg>
                     <p class="contact-label">Email</p>
-                    <p class="contact-value">Send Mail To</p>
+                    <p class="contact-value">Send Mail</p>
                 </a>
                 <a href="https://linkedin.com/in/prabha-k-685634233" target="_blank" rel="noopener noreferrer" class="contact-card">
                     <svg class="contact-icon" width="32" height="32" fill="white" viewBox="0 0 24 24">
@@ -295,7 +349,7 @@
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
                 </svg>
-                <a href="Prabha_K_Resume.pdf" class="link" download class="button">Download Resume</a>
+                <a href="Prabha_K_Resume.pdf" class="link" download class="button"><b>Download Resume</b></a>
             </button>
         </div>
     </section>
@@ -303,7 +357,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Prabha K. Crafted with passion and creativity.</p>
+            <p>&copy; 2025 @ Prabha K. Crafted with passion and creativity.</p>
         </div>
     </footer>
 
